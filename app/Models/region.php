@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class region extends Model
+{
+    use HasFactory;
+
+    protected $guarded = [];
+
+    protected $fillable = [
+        "nomr",
+        "superficie"
+    ];
+
+    public function zone(){
+        return $this->hasManyt(zone::class);
+    }
+}
