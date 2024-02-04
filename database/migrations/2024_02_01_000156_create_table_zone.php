@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string("nomz");
             $table->string("localisation");
             $table->string("description");
-            $table->unsignedBigInteger("idRegion");
-            $table->foreign("idRegion")->references("id")->on("regions");
+            $table->unsignedBigInteger("region_id");
+            $table->foreign("region_id")->references("id")->on("regions");
             $table->timestamps();
         });
     }

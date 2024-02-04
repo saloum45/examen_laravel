@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create("ligne_promoteur", function (Blueprint $table) {
-            $table->primary(["idTerrain","idPromoteur"]);
+        Schema::create("ligne_promoteurs", function (Blueprint $table) {
+            $table->id();
             $table->unsignedBigInteger("idTerrain");
             $table->foreign("idTerrain")->references("id")->on("terrains");
             $table->unsignedBigInteger("idPromoteur");

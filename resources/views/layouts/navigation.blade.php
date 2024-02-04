@@ -21,6 +21,9 @@
                     <x-nav-link :href="route('promoteur.index')" :active="request()->routeIs('promoteur.index')">
                         {{ __('Promoteur') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('lignePromoteur.index')" :active="request()->routeIs('lignePromoteur.index')">
+                        {{ __('Affectation') }}
+                    </x-nav-link>
                 </div>
             </div>
 

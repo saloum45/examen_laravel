@@ -46,7 +46,7 @@
                                     <td>{{ $r->id }}</td>
                                     <td>{{ $r->nomr }}</td>
                                     <td>{{ $r->superficie }}</td>
-                            
+
                                     <td>
                                         <a href="{{ route('region.show', $r->id) }}" class="btn btn-primary"><i class="bi bi-eye-fill"></i></a>
                                         <a href="{{ route('region.edit', $r->id) }}" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>

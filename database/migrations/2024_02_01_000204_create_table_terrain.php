@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->bigInteger("superficie");
             $table->string("description");
-            $table->unsignedBigInteger("idZone");
-            $table->foreign("idZone")->references("id")->on("zones");
+            $table->unsignedBigInteger("zone_id");
+            $table->foreign("zone_id")->references("id")->on("zones");
             $table->timestamps();
         });
     }
