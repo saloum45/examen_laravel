@@ -45,7 +45,7 @@
                                 <tr>
                                     <td>{{ $r->id }}</td>
                                     <td>{{ $r->nomr }}</td>
-                                    <td>{{ $r->superficie }}</td>
+                                    <td>{{ $r->superficie }} Km²</td>
 
                                     <td>
                                         <a href="{{ route('region.show', $r->id) }}" class="btn btn-primary"><i class="bi bi-eye-fill"></i></a>

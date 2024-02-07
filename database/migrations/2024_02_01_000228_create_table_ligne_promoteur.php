@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create("ligne_promoteurs", function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger("idTerrain");
-            $table->foreign("idTerrain")->references("id")->on("terrains");
-            $table->unsignedBigInteger("idPromoteur");
-            $table->foreign("idPromoteur")->references("id")->on("promoteurs");
+            $table->unsignedBigInteger("terrain_id");
+            $table->foreign("terrain_id")->references("id")->on("terrains");
+            $table->unsignedBigInteger("promoteur_id");
+            $table->foreign("promoteur_id")->references("id")->on("promoteurs");
             $table->date("dateDebut");
             $table->date("dateFin");
             $table->bigInteger("prix");
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists("ligne_promoteur");
+        Schema::dropIfExists("ligne_promoteurs");
     }
 };

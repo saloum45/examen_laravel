@@ -44,10 +44,10 @@
                                 @foreach ($terrain as $t)
                                 <tr>
                                     <td>{{ $t->id }}</td>
-                                    <td>{{ $t->superficie }}</td>
+                                    <td>{{ $t->superficie }} Km²</td>
                                     <td>{{ $t->description }}</td>
                                     <td>{{ $t->zone_id }}</td>
-                            
+
                                     <td>
                                         <!-- <a href="{{ route('terrain.show', $t->id) }}" class="btn btn-primary"><i class="bi bi-eye-fill"></i></a> -->
                                         <a href="{{ route('terrain.edit', $t->id) }}" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>

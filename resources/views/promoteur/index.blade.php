@@ -5,7 +5,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl leading-tight">
-            <STRONG><CENter>LISTE DES REGIONS</CENter></STRONG>
+            <STRONG><CENter>LISTE DES PROMOTEURS</CENter></STRONG>
         </h2>
     </x-slot>
 
@@ -49,7 +49,7 @@
                                     <td>{{ $p->tel }}</td>
                                     <td>{{ $p->email }}</td>
                                     <td>{{ $p->bp }}</td>
-                            
+
                                     <td>
                                         <!-- <a href="{{ route('promoteur.show', $p->id) }}" class="btn btn-primary"><i class="bi bi-eye-fill"></i></a> -->
                                         <a href="{{ route('promoteur.edit', $p->id) }}" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>

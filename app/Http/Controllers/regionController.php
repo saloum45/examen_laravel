@@ -33,7 +33,7 @@ class regionController extends Controller
     public function store(Request $request)
     {
         $region = new ModelsRegion();
-        
+
         $region->nomr = $request->nomr;
         $region->superficie = $request->superficie;
 
@@ -47,8 +47,8 @@ class regionController extends Controller
      */
     public function show($id)
     {
-        $region = ModelsRegion::findOrFail($id);
-        
+        $region = ModelsRegion::with('zone')->findOrFail($id);
+
         return view('region.show', compact('region'));
     }
 

@@ -5,7 +5,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl leading-tight">
-            <STRONG><CENter>LISTE DES REGIONS</CENter></STRONG>
+            <STRONG><CENter>LISTE DES AFFECTATIONS</CENter></STRONG>
         </h2>
     </x-slot>
 

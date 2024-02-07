@@ -1,7 +1,11 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <!-- bootstrap icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-
+<style>
+    .description{
+        width: 320px;
+    }
+</style>
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl leading-tight">
@@ -47,9 +51,9 @@
                                     <td>{{ $z->id }}</td>
                                     <td>{{ $z->nomz }}</td>
                                     <td>{{ $z->localisation }}</td>
-                                    <td>{{ $z->description }}</td>
+                                    <td class="description">{{ $z->description }}</td>
                                     <td>{{ $z->region_id }}</td>
-                            
+
                                     <td>
                                         <a href="{{ route('zone.show', $z->id) }}" class="btn btn-primary"><i class="bi bi-eye-fill"></i></a>
                                         <a href="{{ route('zone.edit', $z->id) }}" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>

@@ -17,6 +17,6 @@ class region extends Model
     ];
 
     public function zone(){
-        return $this->hasManyt(zone::class);
+        return $this->hasMany(zone::class);
     }
 }
