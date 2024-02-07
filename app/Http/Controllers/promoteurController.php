@@ -47,7 +47,7 @@ class promoteurController extends Controller
     public function show($id)
     {
         //
-        $promoteur = ModelsPromoteur::find($id);
+        $promoteur = ModelsPromoteur::with('lignePromoteur')->find($id);
         if ($promoteur == null) {
             return "erreur";
         } // si l'id n'existe pas on renvoie une erreur

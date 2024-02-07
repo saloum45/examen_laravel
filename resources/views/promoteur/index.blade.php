@@ -51,7 +51,7 @@
                                     <td>{{ $p->bp }}</td>
 
                                     <td>
-                                        <!-- <a href="{{ route('promoteur.show', $p->id) }}" class="btn btn-primary"><i class="bi bi-eye-fill"></i></a> -->
+                                        <a href="{{ route('promoteur.show', $p->id) }}" class="btn btn-primary"><i class="bi bi-eye-fill"></i></a>
                                         <a href="{{ route('promoteur.edit', $p->id) }}" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
                                         <a href="{{ route('promoteur.delete', $p->id) }}" class="btn btn-danger" onclick="return confirm('Are you sure to delete');"><i class="bi bi-trash3-fill"></i></a>
                                     </td>

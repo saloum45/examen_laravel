@@ -55,7 +55,7 @@
                                     <td>{{ $z->region_id }}</td>
 
                                     <td>
-                                        <a href="{{ route('zone.show', $z->id) }}" class="btn btn-primary"><i class="bi bi-eye-fill"></i></a>
+                                        {{-- <a href="{{ route('zone.show', $z->id) }}" class="btn btn-primary"><i class="bi bi-eye-fill"></i></a> --}}
                                         <a href="{{ route('zone.edit', $z->id) }}" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
                                         <a href="{{ route('zone.delete', $z->id) }}" class="btn btn-danger" onclick="return confirm('Are you sure to delete');"><i class="bi bi-trash3-fill"></i></a>
                                     </td>
